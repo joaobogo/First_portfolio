@@ -1,0 +1,618 @@
+<!DOCTYPE html>
+<!-- saved from url=(0022)http://localhost:3000/ -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+    <link rel="icon" href="http://localhost:3000/favicon.ico">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="theme-color" content="#000000">
+    <meta name="description" content="Web site created using create-react-app">
+    <!--
+      manifest.json provides metadata used when your web app is installed on a
+      user's mobile device or desktop. See https://developers.google.com/web/fundamentals/web-app-manifest/
+    -->
+    <link rel="manifest" href="http://localhost:3000/manifest.json">
+    <!--
+      Notice the use of  in the tags above.
+      It will be replaced with the URL of the `public` folder during the build.
+      Only files inside the `public` folder can be referenced from the HTML.
+
+      Unlike "/favicon.ico" or "favicon.ico", "/favicon.ico" will
+      work correctly both with client-side routing and a non-root public URL.
+      Learn how to configure a non-root public URL by running `npm run build`.
+    -->
+    <title>React App</title>
+  <style type="text/css">@import url(https://fonts.googleapis.com/css2?family=Outfit:wght@100;200;300;400;500;600;700;800;900&family=Roboto:wght@500&display=swap);</style><style type="text/css">:root {
+--primary-color: #171a20cc;
+}
+
+*{
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  margin: 0;
+  font-family: 'Roboto Condensed', 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+ul{ 
+
+  list-style-type: none;
+}
+
+a{
+  text-decoration: none;
+}
+
+h1{
+  font-size: 3.5rem;
+}
+
+h2{
+  font-size: 3rem;
+}
+
+h3{
+  font-size: 2rem;
+}
+
+.btn{
+  margin: .5rem;
+  padding: .7rem 1.5rem;
+  font-size: .8rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  border-radius: 25px;
+  border: none;
+  background:rgba(255, 255, 255, .1);
+  width: 90%;
+  color: #f6f6f6;
+  cursor:pointer;
+}
+
+.btn-dark {
+  background: rgba(0, 0, 0, .5);
+}
+
+.btn:hover{
+  background-color: rgb(0, 0, 0);
+  opacity: .8;
+}
+.btn-dark:hover{
+  background-color: darkgrey;
+  opacity: .8;
+}</style><style type="text/css">.power {
+    width: 100%;
+    height: 100vh;
+    background: url(/static/media/kid.4ce68ba2.png) no-repeat center center/cover;
+    opacity: .9;
+}
+
+.power .container {
+    width: 100%;
+    height: 50vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.power .top {
+    color: rgb(255, 255, 255);
+    text-align: center;
+    margin-top: 150px;
+    text-shadow: 1px 1px 2px red, 0 0 1em rgb(250, 4, 4), 0 0 0.2em rgb(224, 49, 49);
+}
+
+h1 {
+    background: none;
+}
+
+.power .bottom {
+    margin-top: 4rem;
+    display: flex;
+    justify-content: center;
+    max-width: 600px;
+    width: 100%;
+    margin-bottom: 4rem;
+}
+
+.mainbtn {
+    background-color: rgb(214, 28, 28, 0.5);
+    width: 100px;
+    height: 10px;
+    box-shadow: 5px 10px 18px red;
+}
+
+@media screen and (max-width:540px) {
+    .power .container .bottom {
+        align-items: center;
+    }
+
+    .power .top {
+        color: white;
+        margin-top: 16rem;
+        font-size: 40px;
+        text-align: center;
+    }
+
+.bottom{
+    display: flex;
+    flex-direction: row;
+    grid-gap: 50px;
+    gap: 50px;
+}
+
+img{
+    margin-top: 200px;
+}
+
+}</style><style type="text/css">.about {
+    width: 100%;
+    height: 100vh;
+    margin: 3rem 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    flex: wrap 1;
+    height: 100%;
+    margin-top: -48px;
+    background-color: rgb(0, 0, 0);
+}
+
+:root {
+    background-color: black;
+}
+
+.title {
+    text-align: center;
+    margin-top: 25px;
+    color: white;
+    margin-bottom: 10px;
+}
+
+.left {
+    margin-left:-100px;
+    color: white;
+    width: 30%;
+}
+
+.img-container {
+    display: flex;
+    flex-direction: column;
+
+}
+
+.img {
+    margin-top: 30px;
+    width: 200px;
+    height: 150px;
+    margin-left: -250px;
+}
+
+
+@media screen and (max-width:540px) {
+
+
+    .about {
+        width: 100vh;
+        height: 100vh;
+        margin: 3rem 0;
+        display: flex;
+        flex-direction: column;
+
+    }
+
+    .left {
+       margin-left: -300px;
+        height: 600px;
+        width: 250px;
+       justify-content: center;
+        text-align: center;
+    }
+
+    h1 {
+        margin-top: 25px;
+    }
+
+    img{
+        margin-top: 300px;
+        width: 80%;
+    }
+
+
+
+
+
+
+
+
+}</style><style type="text/css">.navbar {
+    width: 100%;
+    height: 100px;
+    position: fixed;
+    z-index: 5;
+   
+}
+
+h3 {
+    text-shadow: 1px 1px 2px red, 0 0 1em rgb(255, 0, 0), 0 0 0.2em rgb(255, 0, 0);
+}
+
+h1 {
+    text-shadow: 1px 1px 2px red, 0 0 1em rgb(255, 0, 0), 0 0 0.2em rgb(255, 0, 0);
+}
+
+.navbar .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+.navbar .logo {
+    display: flex;
+    align-items: center;
+    margin: 1rem;
+    color: #f6f6f6;
+    z-index: 5;
+}
+
+.hamburger {
+    display: none;
+    padding: 1rem;
+}
+
+.mobile-menu {
+    display: none;
+}
+
+.nav-menu {
+    display: flex;
+}
+
+.nav-menu li {
+    padding: 1rem;
+}
+
+.nav-menu li a {
+    color: #f6f6f6;
+    font-size: 1rem;
+    font-weight: 600;
+}
+
+
+
+@media screen and (max-width: 940px) {
+ 
+    
+    .hamburger {
+        display: block;
+        z-index: 5;
+        margin-right: 80px;
+    }
+
+    .mobile-menu {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .nav-menu {
+        position: absolute;
+        flex-direction: column;
+        justify-content: center;
+        width: 60%;
+        height: 100vh;
+        background: var(--primary-color);
+        top: 0;
+        right: -100%;
+        transition: 0.9s ease-in-out;
+    }
+
+    .active {
+        right: 0;
+    }
+
+    .nav-menu li {
+        margin: .5rem;
+    }
+
+    .nav-menu li a {
+        font-size: 1.2rem;
+        font-weight: bold;
+    }
+
+    .nav-menu li:hover {
+        border-bottom: 1px solid #aaa;
+        width: 175px;
+    }
+
+    .nav-menu button {
+        margin: 1rem auto;
+        padding: .7rem 1.5rem;
+        font-size: 1.2rem;
+        border-radius: 25px;
+        border: none;
+        background: rgba(255, 255, 255, .3);
+        width: 100%;
+        color: #f6f6f6;
+    }
+
+    .nav-menu button:hover {
+        background: rgba(255, 255, 255, .1);
+    }
+
+    .nav-menu .social-icons {
+        display: flex;
+        justify-content: space-evenly;
+        margin: 1rem;
+    }
+
+    .nav-menu .icon {
+        color: #f8f8f8cc;
+        font-size: 1.4rem;
+    }
+
+    .hide {
+        display: none;
+    }
+
+    .navbar .slide-right {
+        margin-left: 45%;
+        transition: .8s ease-in-out;
+    }
+}
+
+@media screen and (max-width: 495px) {
+
+    .hamburger{
+position: absolute;
+left:300px
+    }
+
+    .nav-menu {
+        width: 75%;
+    }
+
+    .navbar .slide-right {
+        margin-left: 30%;
+    }
+    
+}</style><style type="text/css">.programas {
+    width: 100%;
+    height: 100vh;
+   background-color: black;
+    opacity: .9;
+  
+}
+
+
+.programas .container{
+width: 100%;
+height: 100vh;
+display: flex;
+flex-direction: column;
+justify-content: space-between;
+align-items: center;
+}
+
+.programas .top{
+    margin-top: 7rem;
+    color: white;
+}
+
+.title{
+    margin-top: 0px;
+}
+
+
+
+.programas .bottom{
+    margin-top: 4rem;
+  display: flex;
+  justify-content: center;
+  max-width: 600px;
+  width: 100%;
+  margin-bottom: 4rem;
+}
+
+section{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    margin-top: 50px;
+
+}
+
+.descricao{
+    color: white; 
+    text-align: left;
+    width: 40%;
+}
+
+.precos{
+    color: white;
+}
+@media screen and (max-width:540px) {
+    
+    
+    .programas .container .bottom {
+    flex-direction: column;
+    align-items: center;
+}
+
+section{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+h3{
+    text-align: center;
+    margin-top: 20px;
+}
+.descricao{
+width: 90%;
+text-align: center;
+
+
+}
+}</style><style type="text/css">.contact {
+    width: 100%;
+    height: 100vh;
+    opacity: .9;
+    background-color: rgb(160, 43, 43);
+}
+
+.contact .container {
+    width: 100%;
+    height: 80vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+
+.contact .top {
+    margin-top: 25px;
+    color: white;
+}
+
+.contact .bottom {
+    margin-top: 2rem;
+    display: flex;
+    justify-content: center;
+    max-width: 600px;
+    width: 100%;
+    margin-bottom: 4rem;
+}
+
+.contact form{
+    max-width: 600px;
+    width: 100%;
+}
+
+.contact form div{
+    display: flex;
+    flex-direction: column;
+    margin: .5rem;
+}
+
+.contact form label{
+    margin:1rem 0.2 .7;
+    color:white
+}
+
+.contact form input, textarea{
+    margin: .5rem;
+    padding: .7rem 1.5rem;
+    background: rgba(255, 255, 255, .3);
+    border: none;
+    border-radius: 25px;
+    color: white;
+    font-size: 1rem;
+    outline: none;
+font-family: Roboto Condensed, sans-serif;
+}
+
+.contact form input:hover, textarea:hover{
+    box-shadow: 0 0 4px 0;
+}
+
+.contact form input::placeholder, textarea::placeholder{
+    color: #333;
+}
+
+@media screen and (max-width:540px) {
+
+
+
+}</style><style type="text/css">.footer {
+    width: 100%;
+    padding: 6rem 0;
+    background-color: rgba(19, 19, 19, 0.8);
+    display: flex;
+}
+
+.footer-container {
+    max-width: 1140px;
+    margin: auto;
+    display: flex;
+    width:100%;
+    margin-left: 200px;
+    margin-top: -40px;
+    margin-bottom: -50px;
+}
+
+.left {
+    height: 100%;
+    max-width: 100%;
+    display: flex;
+    flex-direction: column;
+    padding: 1 rem;
+    justify-content: flex-start;
+}
+
+.location {
+    display: flex;
+    margin-bottom: 0.8rem;
+}
+
+.location p {
+    line-height: 30px;
+}
+
+.right {
+    height: 100%;
+    max-width: 100%;
+    display: flex;
+    flex-direction: column;
+    padding: 1rem;
+}
+
+.social {
+    margin-top: 1rem;
+}
+
+h4 {
+    font-size: 1.2rem;
+    padding-bottom: 0.7rem;
+}
+
+p {
+    font-size: 1.2rem;
+}
+
+@media screen and (max-width: 640px) {
+
+    .footer-container {
+        grid-template-columns: 1fr;
+      padding-left: .8rem;
+    }
+
+    
+}</style><script charset="utf-8" src="./React App_files/main.7c546f682a1fa81defa5.hot-update.js.download"></script><script charset="utf-8" src="./React App_files/main.9ef6bc69d62cedc0fbc7.hot-update.js.download"></script><script charset="utf-8" src="./React App_files/main.eb38558eccc475d79dfd.hot-update.js.download"></script><script charset="utf-8" src="./React App_files/main.2d4651c298b3fbde0abd.hot-update.js.download"></script><script charset="utf-8" src="./React App_files/main.642559f29f4eff43df12.hot-update.js.download"></script><script charset="utf-8" src="./React App_files/main.a8d0df8f372ad2505a90.hot-update.js.download"></script><script charset="utf-8" src="./React App_files/main.2e1f3d8f219c549f5aba.hot-update.js.download"></script><script charset="utf-8" src="./React App_files/main.185b3e2677f649c26f87.hot-update.js.download"></script><script charset="utf-8" src="./React App_files/main.bd7a14ab647b6484a10d.hot-update.js.download"></script><script charset="utf-8" src="./React App_files/main.da947c72a8dc1c8b391c.hot-update.js.download"></script><script charset="utf-8" src="./React App_files/main.52abed19c951ca91ef17.hot-update.js.download"></script><script charset="utf-8" src="./React App_files/main.fa5d7c0ee30a46ffb642.hot-update.js.download"></script><script charset="utf-8" src="./React App_files/main.e56bf46ec242b5e3f139.hot-update.js.download"></script><script charset="utf-8" src="./React App_files/main.fabc5b8624197a3f8884.hot-update.js.download"></script><script charset="utf-8" src="./React App_files/main.647fe6c281ebfb0e7a38.hot-update.js.download"></script><script charset="utf-8" src="./React App_files/main.efc27a6477bbbb91196e.hot-update.js.download"></script><script charset="utf-8" src="./React App_files/main.b54b5a27d347d9263582.hot-update.js.download"></script><script charset="utf-8" src="./React App_files/main.75bf8b0ee04e869d315e.hot-update.js.download"></script><script charset="utf-8" src="./React App_files/main.4abeb82356a189109c6b.hot-update.js.download"></script><script charset="utf-8" src="./React App_files/main.bbd64e92e062ce31cc9f.hot-update.js.download"></script><script charset="utf-8" src="./React App_files/main.4cad8104d17bff4bf378.hot-update.js.download"></script><script charset="utf-8" src="./React App_files/main.c2da2d0ea69b0c5e3cca.hot-update.js.download"></script><script charset="utf-8" src="./React App_files/main.6b152ef0432cbb7dbefa.hot-update.js.download"></script><script charset="utf-8" src="./React App_files/main.9183e9a6bf75d299a7c0.hot-update.js.download"></script></head>
+  <body>
+    <noscript>You need to enable JavaScript to run this app.</noscript>
+    <div id="root"><div class="navbar"><div class="container"><div class="logo"><h3>Teixeira Fighting</h3></div><ul class="nav-menu"><li><a href="http://localhost:3000/"><a>Inicio</a></a></li><li><a href="http://localhost:3000/"><a>Sobre</a></a></li><li><a href="http://localhost:3000/"><a class="active">Programas</a></a></li><li><a href="http://localhost:3000/"><a>Contato</a></a></li><div class="mobile-menu"><div class="social-icons"><svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 512 512" class="icon" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg"><path d="M504 256C504 119 393 8 256 8S8 119 8 256c0 123.78 90.69 226.38 209.25 245V327.69h-63V256h63v-54.64c0-62.15 37-96.48 93.67-96.48 27.14 0 55.52 4.84 55.52 4.84v61h-31.28c-30.8 0-40.41 19.12-40.41 38.73V256h68.78l-11 71.69h-57.78V501C413.31 482.38 504 379.78 504 256z"></path></svg><svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 448 512" class="icon" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg"><path d="M224.1 141c-63.6 0-114.9 51.3-114.9 114.9s51.3 114.9 114.9 114.9S339 319.5 339 255.9 287.7 141 224.1 141zm0 189.6c-41.1 0-74.7-33.5-74.7-74.7s33.5-74.7 74.7-74.7 74.7 33.5 74.7 74.7-33.6 74.7-74.7 74.7zm146.4-194.3c0 14.9-12 26.8-26.8 26.8-14.9 0-26.8-12-26.8-26.8s12-26.8 26.8-26.8 26.8 12 26.8 26.8zm76.1 27.2c-1.7-35.9-9.9-67.7-36.2-93.9-26.2-26.2-58-34.4-93.9-36.2-37-2.1-147.9-2.1-184.9 0-35.8 1.7-67.6 9.9-93.9 36.1s-34.4 58-36.2 93.9c-2.1 37-2.1 147.9 0 184.9 1.7 35.9 9.9 67.7 36.2 93.9s58 34.4 93.9 36.2c37 2.1 147.9 2.1 184.9 0 35.9-1.7 67.7-9.9 93.9-36.2 26.2-26.2 34.4-58 36.2-93.9 2.1-37 2.1-147.8 0-184.8zM398.8 388c-7.8 19.6-22.9 34.7-42.6 42.6-29.5 11.7-99.5 9-132.1 9s-102.7 2.6-132.1-9c-19.6-7.8-34.7-22.9-42.6-42.6-11.7-29.5-9-99.5-9-132.1s-2.6-102.7 9-132.1c7.8-19.6 22.9-34.7 42.6-42.6 29.5-11.7 99.5-9 132.1-9s102.7-2.6 132.1 9c19.6 7.8 34.7 22.9 42.6 42.6 11.7 29.5 9 99.5 9 132.1s2.7 102.7-9 132.1z"></path></svg><svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 448 512" class="icon" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg"><path d="M380.9 97.1C339 55.1 283.2 32 223.9 32c-122.4 0-222 99.6-222 222 0 39.1 10.2 77.3 29.6 111L0 480l117.7-30.9c32.4 17.7 68.9 27 106.1 27h.1c122.3 0 224.1-99.6 224.1-222 0-59.3-25.2-115-67.1-157zm-157 341.6c-33.2 0-65.7-8.9-94-25.7l-6.7-4-69.8 18.3L72 359.2l-4.4-7c-18.5-29.4-28.2-63.3-28.2-98.2 0-101.7 82.8-184.5 184.6-184.5 49.3 0 95.6 19.2 130.4 54.1 34.8 34.9 56.2 81.2 56.1 130.5 0 101.8-84.9 184.6-186.6 184.6zm101.2-138.2c-5.5-2.8-32.8-16.2-37.9-18-5.1-1.9-8.8-2.8-12.5 2.8-3.7 5.6-14.3 18-17.6 21.8-3.2 3.7-6.5 4.2-12 1.4-32.6-16.3-54-29.1-75.5-66-5.7-9.8 5.7-9.1 16.3-30.3 1.8-3.7.9-6.9-.5-9.7-1.4-2.8-12.5-30.1-17.1-41.2-4.5-10.8-9.1-9.3-12.5-9.5-3.2-.2-6.9-.2-10.6-.2-3.7 0-9.7 1.4-14.8 6.9-5.1 5.6-19.4 19-19.4 46.3 0 27.3 19.9 53.7 22.6 57.4 2.8 3.7 39.1 59.7 94.8 83.8 35.2 15.2 49 16.5 66.6 13.9 10.7-1.6 32.8-13.4 37.4-26.4 4.6-13 4.6-24.1 3.2-26.4-1.3-2.5-5-3.9-10.5-6.6z"></path></svg></div></div></ul><div class="hamburger"><svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 448 512" height="20" width="20" xmlns="http://www.w3.org/2000/svg" style="color: rgb(255, 255, 255);"><path d="M16 132h416c8.837 0 16-7.163 16-16V76c0-8.837-7.163-16-16-16H16C7.163 60 0 67.163 0 76v40c0 8.837 7.163 16 16 16zm0 160h416c8.837 0 16-7.163 16-16v-40c0-8.837-7.163-16-16-16H16c-8.837 0-16 7.163-16 16v40c0 8.837 7.163 16 16 16zm0 160h416c8.837 0 16-7.163 16-16v-40c0-8.837-7.163-16-16-16H16c-8.837 0-16 7.163-16 16v40c0 8.837 7.163 16 16 16z"></path></svg></div></div></div><div name="inicio" class="power"><div class="container"><div class="top"><h1>Aprenda a arte do Muay Thai e Boxe</h1></div><div class="bottom"><a href="http://localhost:3000/"><a class="btn mainbtn active">Programas</a></a><a href="http://localhost:3000/"><a class="btn mainbtn">Contato</a></a></div></div></div><div name="sobre" class="corpo"><div class="title"><h1>Sobre a Teixeira Fighting</h1></div><div class="about"><div class="left"><p>Sou João Teixeira. Treino Muay Thai à mais de 10 anos, sou nivel ponta azul escura, e competidor atualmente de mma. Sou da equipe CM Systems, uma das maiores e melhores do Brasil. Busco aprimorar sempre meu estilo de luta, coloco em prática também outros estilos como jiu-jítsu onde sou blue belt, e wrestling para me tornar um destaque no mma. Dou aulas para manter meus treinos e também por que amo o esporte.</p></div><div class="right"><div class="img-container"><div class="imgstack top"><img src="./React App_files/win.31805041.jpg" class="img" alt="true"></div><div class="imgstack bottom"><img src="./React App_files/main.c373eb80.jpg" class="img" alt="true"></div></div></div></div></div><div name="programas" class="programas"><div class="title"><h1>Programas</h1></div><section><div class="descricao"><p>Na Teixeira Fighting nós criamos treinos personalizados para cada aluno de acordo com o seu objetivo pessoal. Nossos treinos podem ser feito em domicílio, parques ou na nossa academia. Nossos treinos são muito utilizados na perca de peso de uma forma interativa em diferente em cada aula, evitando ter um aula monótona. Nossos treinos duram ao redor de 1 hora, sendo divididos entre alongamentos, cardio e técnica. Mesmo que nossos treinos são utilizados por muitos para a perca de peso, nós tambem somos altamente qualificados para preparar nossos alunos para lutas amadoras ou até mesmo profissionais. Tendo um treino correto e consistente, nós conseguimos ver um progresso incrível em todos alunos, com melhoras na mobilidade, reflexos, defesa pessoal e sáude em geral.</p></div><div class="precos"><h3>Preços</h3><br><p>2 vezes por semana ------ R$440/mês</p><p>3 vezes por semana ------ R$600/mês</p><p> 5 vezes por semana ------ R$900/mês</p></div></section></div><div name="contato" class="contact"><div class="container"><div class="top"><h1>Fale Comigo</h1></div><form><div><label>Nome:</label><input type="text" placeholder="Escreva seu nome"></div><div><label>Email:</label><input type="email" placeholder="Escreva seu email"></div><div><label>Mensagem:</label><textarea cols="30" rows="5" placeholder="Escreva sua mensagem"></textarea></div><div class="bottom"><button class="btn btn-dark">Enviar</button></div></form></div></div><div class="footer"><div class="footer-container"><div class="left"><div class="location"><svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 576 512" height="20" width="20" xmlns="http://www.w3.org/2000/svg" style="color: rgb(255, 255, 255); margin-right: 2rem;"><path d="M280.37 148.26L96 300.11V464a16 16 0 0 0 16 16l112.06-.29a16 16 0 0 0 15.92-16V368a16 16 0 0 1 16-16h64a16 16 0 0 1 16 16v95.64a16 16 0 0 0 16 16.05L464 480a16 16 0 0 0 16-16V300L295.67 148.26a12.19 12.19 0 0 0-15.3 0zM571.6 251.47L488 182.56V44.05a12 12 0 0 0-12-12h-56a12 12 0 0 0-12 12v72.61L318.47 43a48 48 0 0 0-61 0L4.34 251.47a12 12 0 0 0-1.6 16.9l25.5 31A12 12 0 0 0 45.15 301l235.22-193.74a12.19 12.19 0 0 1 15.3 0L530.9 301a12 12 0 0 0 16.9-1.6l25.5-31a12 12 0 0 0-1.7-16.93z"></path></svg><div><p>Curitiba, PR</p></div></div><div class="phone"><h4><svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 512 512" height="20" width="20" xmlns="http://www.w3.org/2000/svg" style="color: rgb(255, 255, 255); margin-right: 2rem;"><path d="M493.4 24.6l-104-24c-11.3-2.6-22.9 3.3-27.5 13.9l-48 112c-4.2 9.8-1.4 21.3 6.9 28l60.6 49.6c-36 76.7-98.9 140.5-177.2 177.2l-49.6-60.6c-6.8-8.3-18.2-11.1-28-6.9l-112 48C3.9 366.5-2 378.1.6 389.4l24 104C27.1 504.2 36.7 512 48 512c256.1 0 464-207.5 464-464 0-11.2-7.7-20.9-18.6-23.4z"></path></svg>+55 41 9206-3723</h4></div><div class="email"><h4><svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 576 512" height="20" width="20" xmlns="http://www.w3.org/2000/svg" style="color: rgb(255, 255, 255); margin-right: 2rem;"><path d="M160 448c-25.6 0-51.2-22.4-64-32-64-44.8-83.2-60.8-96-70.4V480c0 17.67 14.33 32 32 32h256c17.67 0 32-14.33 32-32V345.6c-12.8 9.6-32 25.6-96 70.4-12.8 9.6-38.4 32-64 32zm128-192H32c-17.67 0-32 14.33-32 32v16c25.6 19.2 22.4 19.2 115.2 86.4 9.6 6.4 28.8 25.6 44.8 25.6s35.2-19.2 44.8-22.4c92.8-67.2 89.6-67.2 115.2-86.4V288c0-17.67-14.33-32-32-32zm256-96H224c-17.67 0-32 14.33-32 32v32h96c33.21 0 60.59 25.42 63.71 57.82l.29-.22V416h192c17.67 0 32-14.33 32-32V192c0-17.67-14.33-32-32-32zm-32 128h-64v-64h64v64zm-352-96c0-35.29 28.71-64 64-64h224V32c0-17.67-14.33-32-32-32H96C78.33 0 64 14.33 64 32v192h96v-32z"></path></svg>joaoteixeirak1@gmail.com</h4></div><div class="social"><a href="https://www.linkedin.com/in/joaobogoprofessional/"><svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 512 512" height="30" width="30" xmlns="http://www.w3.org/2000/svg" style="color: rgb(255, 255, 255); margin-right: 1rem;"><path d="M504 256C504 119 393 8 256 8S8 119 8 256c0 123.78 90.69 226.38 209.25 245V327.69h-63V256h63v-54.64c0-62.15 37-96.48 93.67-96.48 27.14 0 55.52 4.84 55.52 4.84v61h-31.28c-30.8 0-40.41 19.12-40.41 38.73V256h68.78l-11 71.69h-57.78V501C413.31 482.38 504 379.78 504 256z"></path></svg></a><a href="https://github.com/joaobogo"><svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 448 512" height="30" width="30" xmlns="http://www.w3.org/2000/svg" style="color: rgb(255, 255, 255); margin-right: 1rem;"><path d="M224.1 141c-63.6 0-114.9 51.3-114.9 114.9s51.3 114.9 114.9 114.9S339 319.5 339 255.9 287.7 141 224.1 141zm0 189.6c-41.1 0-74.7-33.5-74.7-74.7s33.5-74.7 74.7-74.7 74.7 33.5 74.7 74.7-33.6 74.7-74.7 74.7zm146.4-194.3c0 14.9-12 26.8-26.8 26.8-14.9 0-26.8-12-26.8-26.8s12-26.8 26.8-26.8 26.8 12 26.8 26.8zm76.1 27.2c-1.7-35.9-9.9-67.7-36.2-93.9-26.2-26.2-58-34.4-93.9-36.2-37-2.1-147.9-2.1-184.9 0-35.8 1.7-67.6 9.9-93.9 36.1s-34.4 58-36.2 93.9c-2.1 37-2.1 147.9 0 184.9 1.7 35.9 9.9 67.7 36.2 93.9s58 34.4 93.9 36.2c37 2.1 147.9 2.1 184.9 0 35.9-1.7 67.7-9.9 93.9-36.2 26.2-26.2 34.4-58 36.2-93.9 2.1-37 2.1-147.8 0-184.8zM398.8 388c-7.8 19.6-22.9 34.7-42.6 42.6-29.5 11.7-99.5 9-132.1 9s-102.7 2.6-132.1-9c-19.6-7.8-34.7-22.9-42.6-42.6-11.7-29.5-9-99.5-9-132.1s-2.6-102.7 9-132.1c7.8-19.6 22.9-34.7 42.6-42.6 29.5-11.7 99.5-9 132.1-9s102.7-2.6 132.1 9c19.6 7.8 34.7 22.9 42.6 42.6 11.7 29.5 9 99.5 9 132.1s2.7 102.7-9 132.1z"></path></svg></a></div></div></div></div></div>
+    <!--
+      This HTML file is a template.
+      If you open it directly in the browser, you will see an empty page.
+
+      You can add webfonts, meta tags, or analytics to this file.
+      The build step will place the bundled scripts into the <body> tag.
+
+      To begin the development, run `npm start` or `yarn start`.
+      To create a production bundle, use `npm run build` or `yarn build`.
+    -->
+  <script src="./React App_files/bundle.js.download"></script><script src="./React App_files/1.chunk.js.download"></script><script src="./React App_files/main.chunk.js.download"></script><script src="./React App_files/main.fc234968d39e146fd7c6.hot-update.js.download"></script>
+
+</body><div id="tedit-record" data-extension-id="lfbpcollhpgcagagphajcighiikcefed"></div></html>

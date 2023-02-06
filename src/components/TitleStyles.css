@@ -1,0 +1,15 @@
+.title {
+    width: 100%;
+    height: fit-content;
+    background-size: cover;
+    background-position: center;
+    opacity: .8;
+}
+
+.titlecontainer {
+    padding: 300px 30px;
+    margin: 0 auto;
+    text-align: center;
+    color: white;
+    font-size: 30px;
+}

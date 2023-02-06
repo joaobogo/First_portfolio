@@ -1,0 +1,27 @@
+.whatsappbtn{
+    position: fixed;
+    right: 15px;
+    top: 85vh;
+    z-index: 5;
+}
+
+
+.whatsappbtn img{
+width: 65px;
+transition: 0.4s;
+border-radius: 15px;
+}
+
+.whatsappbtn img:hover{
+    opacity:0.6;
+}
+
+@media screen and (max-width:640px) {
+    .whatsappbtn{
+        position: fixed;
+        right: 20px;
+        top: 90vh;
+        z-index: 5;
+    }
+
+}
