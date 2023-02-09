@@ -18,7 +18,7 @@ const Heroimg = () => {
                 <div className="maindiv">
                     <Link to='/project' className="btn mediabtn">Projects</Link>
                     <Link to='/contact' className="btn-light mediabtn">Contact</Link>
-                    <a download="CVH2022SEPT.pdf" href="CVH2022SEPT.pdf" className="btn mediabtn">Download CV</a>
+                    <a download="" href="" className="btn mediabtn">Download CV</a>
                 </div>
             </div>
 
