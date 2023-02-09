@@ -6,7 +6,7 @@ import './WhatsappBtnStyles.css'
 function WhatsappBtn() {
   return (
 
-  <a href='' className='whatsappbtn'>
+  <a href='https://wa.me/5541996284949' className='whatsappbtn'>
     <img src={WhatsApp}/>
   </a>
 

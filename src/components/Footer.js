@@ -28,7 +28,7 @@ const Footer = () => {
                 </div>
                 <div className="right">
                 <h4>About</h4>
-                <p> This is me, João Bogo. Jr Front End Developer, I am a graduate from Western Carolina University in Business Marketing Administration. Now, I seek to pursue new goals within the IT Industry where I expect to learn and push myself to new limits.</p>
+                <p> I am João Bogo, Jr Front End Developer, I am a graduate from Western Carolina University in Business Marketing Administration. Now, I seek to pursue new goals within the IT Industry where I expect to learn and push myself to new limits.</p>
                 <div className="social">
                     <a href="https://www.linkedin.com/in/joaobogoprofessional/"><FaLinkedin  size={30} style={{ color: "#fff", marginRight: "1rem" }} /></a>
                     <a href="https://github.com/joaobogo"><FaGithub size={30} style={{ color: "#fff", marginRight: "1rem" }} /></a>

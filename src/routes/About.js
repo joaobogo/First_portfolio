@@ -9,7 +9,7 @@ const About = () => {
   return (
     <div className='relative'>
       <Navbar />
-      <Heroimg2 heading="ABOUT" text="I'm a Front End Developer" />
+      <Heroimg2 heading="ABOUT ME"  />
       <AboutContent />
       <Footer />
       <WhatsappBtn />
