@@ -49,6 +49,9 @@
     z-index: 5;
 }
 
+.aboutp{
+    text-align: justify;
+}
 
 @media screen and (max-width: 640px) {
 

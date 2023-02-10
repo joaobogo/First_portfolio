@@ -9,7 +9,7 @@ const AboutContent = () => {
         <div className="about">
             <div className="left">
                 <h1>Who am I?</h1>
-                <p>
+                <p className="aboutp">
                     My name is João Bogo, I am a graduate from Western Carolina University, where I studied Business Marketing Administration. After my college experience I started getting familiar with the IT industry, which lead me to study front-end development, with a focus on HTML, CSS, JS and React.js. Now I seek new challenges where I can showcase my knowledge but also learn from experienced professionals in the industry.
                 </p>
                 <Link to="/contact">
