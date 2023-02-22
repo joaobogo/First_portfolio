@@ -22,10 +22,10 @@ const ProjectCardData = [
     },
     {
         imgsrc: testimg,
-        title: "Expenses Tracker",
-        text: "Simple program designed to track financial expenses and gains of an individual. Created using HTML, CSS and Javascript;",
-        view: "https://joaosbankaccount.netlify.app/",
-        source: "https://github.com/joaobogo/BankAccount"
+        title: "Tasks Tracker",
+        text: "Simple progress tracker, where you can create, drag, and classify by priority to facilitate the organization of your tasks. This was created using HTML,CSS,JS and React.js (styled components, contexts, local storage).",
+        view: "https://daily-organizerapp.netlify.app",
+        source: "https://github.com/joaobogo/Daily-organizer"
     }
 ];
 
