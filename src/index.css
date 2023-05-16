@@ -7,7 +7,9 @@
 }
 
 body{
-  background: var(--primary);
+  background: url(./assets/backgroundlighthuge2.jpg);
+  background-size: cover;
+  overflow-x: hidden;
 }
 
 :root{
@@ -17,55 +19,8 @@ body{
   --quaternary:#222;
 }
 
-h1,h2, h4, p, a {
-  color: var(--secondary);
-  text-decoration: none;
-}
-
 ul{
   list-style-type: none;
 }
 
-.btn{
-  padding: 12px 32px;
-  font-size: 1rem;
-  text-transform: uppercase;
-  background: var(--tertiary);
-  color:var(--quaternary);
-  border: 1px solid var(--secondary);
-  font-weight: 600;
-  cursor: pointer;
-}
 
-.btn-light {
-  padding: 12px 32px;
-  font-size: 1rem;
-  text-transform: uppercase;
-  border: 1px solid var(--secondary);
-  font-weight: 600;
-  cursor: pointer;
-  background: transparent;
-  color: var(--secondary);
-}
-
-.btn:hover{
-  background: rgba(255,255,255,0.2);
-  color: var(--secondary);
-  transition: 0.3s;
-}
-
-.relative{
-  position: relative;
-}
-
-.flex{
-  display: flex;
-}
-
-@media screen and (max-width:640px) {
-
- .mediabtn{
-  display: flex;
-  flex-direction: column;
- }
-}

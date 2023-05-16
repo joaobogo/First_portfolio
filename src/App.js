@@ -1,25 +1,21 @@
 import React from "react";
 import "./index.css";
-import Home from './routes/Home';
-import About from './routes/About';
-import Project from './routes/Project';
-import Contact from './routes/Contact';
-import {Route, Routes} from "react-router-dom"
-import Project2 from "./routes/Project2";
+import { Route, Routes } from "react-router-dom";
 import Provider from "./context/Provider";
-import Flexpage from "./routes/Flexpage";
+import Header from "./components/newport/Header/Header";
+import Projects from "./components/newport/Projects/Projects";
+import Footer from "./components/newport/Footer/Footer";
+import About from "./components/newport/About/About";
+import Contact from "./components/newport/Contact/Contact";
 
 function App() {
   return (
     <Provider>
-    <Routes>
-      <Route path="/" element={<Home/>}/>
-      <Route path="/project" element={<Project/>}/>
-      <Route path="/about" element={<About/>}/>
-      <Route path="/contact" element={<Contact/>}/>
-      <Route path='/project2' element={<Project2/>}/>
-      <Route path='/flexpage' element={<Flexpage/>}/>
-    </Routes>
+        <Header />
+        <About/>
+        <Projects />
+        <Contact/>
+        <Footer />
     </Provider>
   );
 }
