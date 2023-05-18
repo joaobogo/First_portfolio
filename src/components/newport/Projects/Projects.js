@@ -26,8 +26,8 @@ useEffect(() => {
             AWS for the backend and hosting. I used quite a few different API's
             during this proccess, Sanity to allow the client to manage the
             store's inventory with ease, and also being able to post on their
-            internal blog on their own. I also used Stripe to unable safe credit
-            card transactions for the purchases, and Mercado Pago to unable PIX
+            internal blog on their own. I also used Stripe to enable safe credit
+            card transactions for the purchases, and Mercado Pago to enable PIX
             payments. The Bling API was used to connect their website to their
             inventory management and accounting system, so that every purchase
             made within the website automatically updates their official
