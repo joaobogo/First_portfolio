@@ -55,7 +55,7 @@ function Contact() {
         <div className="left">
           <h4>Don't be a stranger, reach out</h4>
           <div className="icons">
-            <FaHome /> <p> Curitiba, PR, Brazil</p>
+            <FaHome /> <p>Brazil</p>
           </div>
           <div className="icons">
             <FaPhone /> <p> +55 (41) 99628-4949</p>
