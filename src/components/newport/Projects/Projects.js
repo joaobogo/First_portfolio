@@ -47,19 +47,20 @@ function Projects() {
         <div className="right">
           <img src={mend}></img>
           <div className="buttoncontainer2">
-          <a href="https://clever-kataifi-ac2d1f.netlify.app">Demo</a>
+            <a href="https://clever-kataifi-ac2d1f.netlify.app">Demo</a>
             <a href="https://github.com/joaobogo/Mend-Architecture">Code</a>
           </div>
         </div>
 
         <div className="left">
-        <h3>MEND Architecture</h3>
+          <h3>MEND Architecture</h3>
           <p>
-            Using CSS, JS and Reactjs, this project was for a local business.
-            The website was designed by me and it is completely responsive to
-            any devices. The objective of this website was to show potential
-            clients their projects, while keeping a modern and sofisticated look
-            to it.
+            I used CSS, JS and Reactjs, and the Email JS API to set up a system
+            to help MEND capture more customers and get in touch quickly with
+            them. The website was designed by me and it is completely responsive
+            to any devices. The objective of this website was to show potential
+            clients their projects, while keeping a modern and sophisticated
+            look to it.
           </p>
         </div>
       </div>
@@ -68,11 +69,12 @@ function Projects() {
         <div className="left">
           <h3>MEND Architecture</h3>
           <p>
-            Using CSS, JS and Reactjs, this project was for a local business.
-            The website was designed by me and it is completely responsive to
-            any devices. The objective of this website was to show potential
-            clients their projects, while keeping a modern and sofisticated look
-            to it.
+            I used CSS, JS and Reactjs, and the Email JS API to set up a system
+            to help MEND capture more customers and get in touch quickly with
+            them. The website was designed by me and it is completely responsive
+            to any devices. The objective of this website was to show potential
+            clients their projects, while keeping a modern and sophisticated
+            look to it.
           </p>
         </div>
 
@@ -86,6 +88,48 @@ function Projects() {
       </div>
 
       <div data-aos="fade-up" className="first">
+        <div className="left">
+          <h3>Muay Thai Gym Website</h3>
+          <p>
+            Using CSS, JS and Reactjs, this project was for a local business.
+            The website was designed by me and it is completely responsive to
+            any devices. The objective of this website is to raise awareness of
+            the brand and facilitate getting in touch with the business while.
+          </p>
+        </div>
+
+        <div className="right">
+          <img src={teixeira}></img>
+          <div className="buttoncontainer2">
+            <a href="https://teixeirafightclub.com.br/">Demo</a>
+            <a href="https://github.com/joaobogo/Muay-Thai">Code</a>
+          </div>
+        </div>
+      </div>
+
+      <div data-aos="fade-up" className="first mobile">
+        <div className="right">
+          <img src={cotas}></img>
+          <div className="buttoncontainer2">
+            <a href="https://melodious-taffy-59405b.netlify.app/">Demo</a>
+            <a href="https://github.com/joaobogo/CotasCuritiba">Code</a>
+          </div>
+        </div>
+
+        <div className="left">
+          <h3>Cotas Curitiba Website</h3>
+          <p>
+            Using CSS, JS and Reactjs, and the Email JS API to set up a system
+            to help my client capture more potential clients and reach out to
+            them on a timely manner. The website is completely responsive to any
+            devices. The objective of this website is to raise awareness of the
+            brand and facilitate the proccess of sharing about house and auto
+            loans.
+          </p>
+        </div>
+      </div>
+
+      <div data-aos="fade-up" className="first desktop">
         <div className="left">
           <h3>Cotas Curitiba Website</h3>
           <p>
@@ -103,46 +147,6 @@ function Projects() {
           <div className="buttoncontainer2">
             <a href="https://melodious-taffy-59405b.netlify.app/">Demo</a>
             <a href="https://github.com/joaobogo/CotasCuritiba">Code</a>
-          </div>
-        </div>
-      </div>
-
-      <div data-aos="fade-up" className="first mobile">
-        <div className="right">
-          <img src={teixeira}></img>
-          <div className="buttoncontainer2">
-            <a href="https://teixeirafightclub.com.br/">Demo</a>
-            <a href="https://github.com/joaobogo/Muay-Thai">Code</a>
-          </div>
-        </div>
-
-        <div className="left">
-          <h3>Muay Thai Gym Website</h3>
-          <p>
-            Using CSS, JS and Reactjs, this project was for a local business.
-            The website was designed by me and it is completely responsive to
-            any devices. The objective of this website is to raise awareness of
-            the brand and facilitate getting in touch with the business while.
-          </p>
-        </div>
-      </div>
-
-      <div data-aos="fade-up" className="first desktop">
-        <div className="left">
-          <h3>Muay Thai Gym Website</h3>
-          <p>
-            Using CSS, JS and Reactjs, this project was for a local business.
-            The website was designed by me and it is completely responsive to
-            any devices. The objective of this website is to raise awareness of
-            the brand and facilitate getting in touch with the business.
-          </p>
-        </div>
-
-        <div className="right">
-          <img src={teixeira}></img>
-          <div className="buttoncontainer2">
-            <a href="https://teixeirafightclub.com.br/">Demo</a>
-            <a href="https://github.com/joaobogo/Muay-Thai">Code</a>
           </div>
         </div>
       </div>
