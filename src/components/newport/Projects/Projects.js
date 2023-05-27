@@ -3,21 +3,20 @@ import ProjectContainer from "./Project.styles";
 import easyfert from "../../../assets/easyfert.png";
 import teixeira from "../../../assets/teixeira.png";
 import cotas from "../../../assets/cotas.png";
-import Aos from 'aos';
-import 'aos/dist/aos.css';
-
+import mend from "../../../assets/mend.png";
+import Aos from "aos";
+import "aos/dist/aos.css";
 
 function Projects() {
-  
-useEffect(() => {
-  Aos.init({duration:2000});
-},[])
+  useEffect(() => {
+    Aos.init({ duration: 2000 });
+  }, []);
 
   return (
     <ProjectContainer id="projects">
-      <h2 data-aos='fade-up'>Latest Projects</h2>
+      <h2 data-aos="fade-up">Latest Projects</h2>
 
-      <div data-aos='fade-up' className="first">
+      <div data-aos="fade-up" className="first">
         <div className="left">
           <h3>E-Commerce Easyfert</h3>
           <p>
@@ -39,12 +38,76 @@ useEffect(() => {
           <img src={easyfert}></img>
           <div className="buttoncontainer2">
             <a href="www.easyfert.com.br">Demo</a>
-            <a href='https://github.com/joaobogo/Easyfert-Frontend'>Code</a>
+            <a href="https://github.com/joaobogo/Easyfert-Frontend">Code</a>
           </div>
         </div>
       </div>
 
-      <div data-aos='fade-up' className="first mobile">
+      <div data-aos="fade-up" className="first mobile">
+        <div className="right">
+          <img src={mend}></img>
+          <div className="buttoncontainer2">
+          <a href="https://clever-kataifi-ac2d1f.netlify.app">Demo</a>
+            <a href="https://github.com/joaobogo/Mend-Architecture">Code</a>
+          </div>
+        </div>
+
+        <div className="left">
+        <h3>MEND Architecture</h3>
+          <p>
+            Using CSS, JS and Reactjs, this project was for a local business.
+            The website was designed by me and it is completely responsive to
+            any devices. The objective of this website was to show potential
+            clients their projects, while keeping a modern and sofisticated look
+            to it.
+          </p>
+        </div>
+      </div>
+
+      <div data-aos="fade-up" className="first desktop">
+        <div className="left">
+          <h3>MEND Architecture</h3>
+          <p>
+            Using CSS, JS and Reactjs, this project was for a local business.
+            The website was designed by me and it is completely responsive to
+            any devices. The objective of this website was to show potential
+            clients their projects, while keeping a modern and sofisticated look
+            to it.
+          </p>
+        </div>
+
+        <div className="right">
+          <img src={mend}></img>
+          <div className="buttoncontainer2">
+            <a href="https://clever-kataifi-ac2d1f.netlify.app">Demo</a>
+            <a href="https://github.com/joaobogo/Mend-Architecture">Code</a>
+          </div>
+        </div>
+      </div>
+
+      <div data-aos="fade-up" className="first">
+        <div className="left">
+          <h3>Cotas Curitiba Website</h3>
+          <p>
+            Using CSS, JS and Reactjs, and the Email JS API to set up a system
+            to help my client capture more potential clients and reach out to
+            them on a timely manner. The website is completely responsive to any
+            devices. The objective of this website is to raise awareness of the
+            brand and facilitate the proccess of sharing about house and auto
+            loans.
+          </p>
+        </div>
+
+        <div className="right">
+          <img src={cotas}></img>
+          <div className="buttoncontainer2">
+            <a href="https://melodious-taffy-59405b.netlify.app/">Demo</a>
+            <a href="https://github.com/joaobogo/CotasCuritiba">Code</a>
+          </div>
+        </div>
+      </div>
+
+      <div data-aos="fade-up" className="first mobile">
         <div className="right">
           <img src={teixeira}></img>
           <div className="buttoncontainer2">
@@ -59,14 +122,13 @@ useEffect(() => {
             Using CSS, JS and Reactjs, this project was for a local business.
             The website was designed by me and it is completely responsive to
             any devices. The objective of this website is to raise awareness of
-            the brand and facilitate getting in touch with the business.
+            the brand and facilitate getting in touch with the business while.
           </p>
         </div>
       </div>
 
-      <div data-aos='fade-up' className="first desktop">
-        
-      <div className="left">
+      <div data-aos="fade-up" className="first desktop">
+        <div className="left">
           <h3>Muay Thai Gym Website</h3>
           <p>
             Using CSS, JS and Reactjs, this project was for a local business.
@@ -75,33 +137,12 @@ useEffect(() => {
             the brand and facilitate getting in touch with the business.
           </p>
         </div>
-        
+
         <div className="right">
           <img src={teixeira}></img>
           <div className="buttoncontainer2">
-          <a href="https://teixeirafightclub.com.br/">Demo</a>
+            <a href="https://teixeirafightclub.com.br/">Demo</a>
             <a href="https://github.com/joaobogo/Muay-Thai">Code</a>
-          </div>
-        </div>
-      </div>
-
-      <div data-aos='fade-up' className="first">
-        <div className="left">
-          <h3>Cotas Curitiba Website</h3>
-          <p>
-            Using CSS, JS and Reactjs, and the Email JS API to set up a system
-            to help my client capture more potential clients and reach out to
-            them on a timely manner. The website is completely responsive to any
-            devices. The objective of this website is to raise awareness of the
-            brand and facilitate the proccess of sharing about house and auto loans.
-          </p>
-        </div>
-
-        <div className="right">
-          <img src={cotas}></img>
-          <div className="buttoncontainer2">
-            <a href="https://melodious-taffy-59405b.netlify.app/">Demo</a>
-            <a href="https://github.com/joaobogo/CotasCuritiba">Code</a>
           </div>
         </div>
       </div>
