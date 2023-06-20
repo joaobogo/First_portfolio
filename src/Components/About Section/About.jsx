@@ -1,6 +1,6 @@
 import React from "react";
 import "./about.css";
-import img from "../../Assets/linkedin.png";
+// import img from "../../Assets/linkedin.png";
 import { VscCloudDownload } from "react-icons/vsc";
 // import cvv from '../../Assets/FRONTEND DEVELOPER.pdf'
 
@@ -36,9 +36,9 @@ const About = () => {
           </div>
         </div>
 
-        <div className="aboutImgDiv">
+        {/* <div className="aboutImgDiv">
           <img className="aboutImg" src={img} alt="João Bogo" />
-        </div>
+        </div> */}
       </div>
     </section>
   );
