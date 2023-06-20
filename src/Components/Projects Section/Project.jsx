@@ -283,7 +283,7 @@ const Project = () => {
                 </div>
               
              <div className="imgDiv">
-              <a href={liveLink} target="_blank">
+              <a href={demo} target="_blank">
               <img src={image} alt={title} /> 
               </a>
              </div>
