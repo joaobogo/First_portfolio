@@ -1,8 +1,8 @@
 import React from "react";
 import "./about.css";
-import img from "../../Assets/linkedin.png";
+import img from "../../assets/linkedin.png";
 import { VscCloudDownload } from "react-icons/vsc";
-// import cvv from '../../Assets/FRONTEND DEVELOPER.pdf'
+// import cvv from '../../assets/FRONTEND DEVELOPER.pdf'
 
 const About = () => {
   return (
